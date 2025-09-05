@@ -1,15 +1,12 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MellowGardener</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+  <title>Admin</title>
 </head>
 <body>
-  <!-- Navbar -->
-  <section id="header">
+        <section id="header">
   <a href="index.html"><img src="src/img/logo.png" class="logo" alt=""></a>
   <div>
     <ul id="navbar">
@@ -23,23 +20,16 @@
     </ul>
   </div>
 </section>
-
-
-
-
-  <!-- Hero -->
-  <section id="hero">
-    <h4></h4>
-    <h2>All the Plants you LOVE</h2>
-    <h1>MellowGardener</h1>
-    <p></p>
-    <a href="shop.html"><button>Shop Now</button></a>
-  </section>
-
-
-  <!-- Features -->
-  <section id="feature" class="section-p1">
-    ...
+  <section id="adminPanel" class="section-p1">
+    <h2>Admin Panel</h2>
+    <form id="adminProductForm">
+      <input type="text" name="name" placeholder="Product Name" required />
+      <input type="number" name="price" placeholder="Price" required />
+      <input type="text" name="image" placeholder="Image URL" required />
+      <button type="submit" class="normal">Add Product</button>
+    </form>
+    <h3>Product List</h3>
+    <div id="adminProductList"></div>
   </section>
 
 

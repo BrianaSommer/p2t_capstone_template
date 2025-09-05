@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+  <a href="index.html"><img src="src/img/logo.png" class="logo" alt=""></a>
+  <div>
+    <ul id="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li data-auth="signed-out"><a href="login.html">Login</a></li>
+      <li data-auth="signed-out"><a href="signup.html">Sign Up</a></li>
+      <li data-auth="admin"><a href="admin.html">Admin</a></li>
+      <li><a href="cart.html">Cart <span id="cart-count">0</span> <i class="fa-solid fa-bag-shopping"></i></a></li>
+      <li data-auth="signed-in"><button data-action="logout" class="normal">Logout</button></li>
+    </ul>
+  </div>
+</section>
+
+
+  <section id="checkout" class="page-section hidden section-p1">
+    <h2>Checkout</h2>
+    <form id="checkoutForm">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="text" name="address" placeholder="Address" required />
+      <input type="text" name="city" placeholder="City" required />
+      <input type="text" name="state" placeholder="State" required />
+      <input type="text" name="zip" placeholder="Zip" required />
+      <button type="submit" class="normal">Place Order</button>
+    </form>
+    <div id="orderSummary"></div>
+  </section>
+  <script src="Ecommerce-js-bundle.js"></script>
+</body>
+</html>
